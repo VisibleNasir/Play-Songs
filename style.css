@@ -44,11 +44,16 @@ body{
     gap: 13px;
     position: absolute;
     bottom: 0;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    padding: 2px;
+    border-radius: 3px;
     
 }
 .footer a{
-    color: gray;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    font-weight: bold;
 }
 .library{
     min-height: 78vh;
@@ -134,4 +139,67 @@ body{
 .buttons{
     display: flex;
 
+}
+
+.playbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    
+    position: fixed;
+    bottom: 30px;
+    border-radius: 10px;
+    width: 70%;
+    background-color: yellow;
+    width: 70vw;
+    min-height: 40px;
+    
+}
+
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+.songList{
+    margin: 2px;
+    height: 344px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    margin: 44px 0;
+}
+.songList ul{
+    padding: 0 4px;
+
+}
+
+.songList ul li{
+    display: flex;
+    list-style-type: decimal;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 12px 0 ;
+    padding: 10px ;
+    border-radius: 5px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 344px;
+    font-size: 13px;
+}
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playnow span{
+    font-size: 10px;
+    width: 64px;
+    font-weight: bold;
 }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="utility.css" />
 
     <title>Visible Player - Music for everyone</title>
-    <link rel="icon" href="a.jpg" type="image/png">
+    <link rel="icon" href="a.jpg" type="image/png" />
   </head>
   <body>
     <div class="container flex">
@@ -24,6 +24,10 @@
           <div class="heading">
             <img class="invert" src="playlist.svg" alt="" />
             <h2>Your Library</h2>
+          </div>
+          <div class="songList">
+            <ul>
+            </ul>
           </div>
 
           <div class="footer">
@@ -99,15 +103,28 @@
               <h2>Happy Hits!</h2>
               <p>Hits to boost your mood and fill you with happiness!</p>
             </div>
+          </div>
 
+          <div class="playbar">
+            <div class="songinfo"></div>
+            <div class="songbuttons">
+              <img src="img/prevsong.svg" alt="" />
+              <img src="img/play.svg" alt="" />
+              <img src="img/nextsong.svg" alt="" />
+            </div>
+
+            <div class="songtime"></div>
+            <div class="volume">
+              <img width="25" src="img/volume.svg" alt="" />
+              <div class="range">
+                <input type="range" name="volume" id="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="sript.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
-
-
-
