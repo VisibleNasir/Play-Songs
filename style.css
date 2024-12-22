@@ -10,10 +10,10 @@ body{
 }
 
 .left{
-    width: 25vw;
+    width: 30vw;
 }
 .right{
-    width: 75vw;
+    width: 70vw;
 }
 
 .home ul li{
@@ -34,43 +34,47 @@ body{
     font-weight: bold;
     
 }
-.logo{
-    width: 20px;
+.logo img{
+    width: 40px;
 }
 .heading img{
-    width: 20px;
+    width: 15px;
+}
+.heading h2{
+    font-size: 20px;
 }
 
 .footer{
     display: flex;
-    font-size: 10px;
+    font-size: 7px;
     gap: 13px;
     position: absolute;
-    bottom: 0;
+    bottom: 1;
     background-color: rgb(0, 0, 0);
-    position: relative;
-    padding: 2px;
-    border-radius: 3px;
+    padding: 3px;
+    width: 85%;
+    justify-content: space-evenly;
     
 }
 .footer a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .library{
     min-height: 78vh;
-    position: relative;
+    width: 28vw;
+    position:relative;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(34,34,34);
-    height: 72px;
+    background-color: rgb(0, 0, 0);
 }
 .header > *{
-    padding: 20px;
+    padding: 15px;
     
 }
 .spotifyplaylists{
@@ -151,13 +155,12 @@ body{
     padding: 12px;
     
     position: fixed;
-    bottom: 30px;
-    border-radius: 10px;
-    width: 70%;
-    background-color: yellow;
-    width: 70vw;
-    min-height: 40px;
-    
+    bottom: 20px;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    width: 64vw;
+    height:50px;
+    filter: invert(1);
 }
 
 .songbuttons{
@@ -168,25 +171,22 @@ body{
 }
 
 .songList{
-    margin: 2px;
     height: 344px;
     overflow-y: scroll;
-    overflow-x:hidden;
-    margin: 44px 0;
+    margin: 10px 0;
 }
 .songList ul{
-    padding: 0 4px;
+    padding: 0 5px;
 
 }
 
 .songList ul li{
     display: flex;
-    list-style-type: decimal;
     justify-content: space-between;
     gap: 10px;
     cursor: pointer;
-    border: 1px solid white;
-    margin: 12px 0 ;
+    border: 1.2px solid white;
+    margin: 7px 0 ;
     padding: 10px ;
     border-radius: 5px;
 }
@@ -195,6 +195,9 @@ body{
     flex-direction: column;
     width: 344px;
     font-size: 13px;
+}
+.info p{
+    font-size: 10px;
 }
 .playnow{
     display: flex;
@@ -205,4 +208,88 @@ body{
     font-size: 10px;
     width: 64px;
     font-weight: bold;
+}
+
+.seekbar{
+    height: 4px;
+    width: 98%;
+    background:  rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    margin: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 12px;
+    background-color: black;
+
+    position: relative;
+    bottom:4px;
+    left: 0%;
+    transition: left 1s;
+}
+.songbuttons{
+    cursor: pointer;
+}
+.songinfo , .songtime{
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 12px;
+    overflow-wrap: normal;
+}
+
+
+.abovebar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.hamburger{
+    display: none;
+}
+
+.hamburgercont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.close{
+    visibility: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 15px;
+}
+
+@media (max-width : 450px) {
+    .left{
+        background-color: black ;
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        width: 233px;
+    }
+    .left .close{
+        visibility:visible;
+        position: absolute;
+        right: 20px;
+        top: 8px;
+        width: 10px;
+    }
+    .right{
+        width: 100vw;
+    }
+    .playbar{
+        width: 92vw;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    
 }
